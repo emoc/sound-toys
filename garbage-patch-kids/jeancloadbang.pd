@@ -1,0 +1,44 @@
+#N canvas 405 41 799 615 10;
+#X obj 42 -28 cnv 15 200 200 empty empty dfgdfgdfg 20 12 0 4 -257985
+-261682 0;
+#X obj 61 -48 cnv 15 160 240 empty empty empty 20 12 0 14 -257985 -66577
+0;
+#X obj 21 -8 cnv 15 240 160 empty empty empty 20 12 0 14 -257985 -66577
+0;
+#N canvas 413 287 760 378 ||||||||||||||||||||||||||| 0;
+#X obj 100 99 cnv 15 200 200 empty empty empty 20 12 0 14 -257985 -66577
+0;
+#X obj 130 169 hsl 60 40 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 2832 1;
+#X obj 309 152 sel 0 1;
+#X obj 209 184 hsl 60 25 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 3068 1;
+#X obj 308 119 metro 500;
+#X obj 105 278 hradio 10 1 0 19 empty empty empty 0 -8 0 10 -262144
+-33289 -159808 8;
+#X obj 308 40 loadbang;
+#X obj 327 73 metro 50;
+#X msg 309 178 0 500;
+#X msg 328 203 1 500;
+#X obj 309 232 line;
+#X obj 309 256 expr 1 - $f1;
+#X obj 179 220 tgl 50 0 empty empty empty 17 7 0 10 -257985 -258113
+-1 0 1;
+#X obj 327 96 random 20;
+#X connect 2 0 8 0;
+#X connect 2 1 9 0;
+#X connect 4 0 12 0;
+#X connect 6 0 4 0;
+#X connect 6 0 7 0;
+#X connect 7 0 13 0;
+#X connect 8 0 10 0;
+#X connect 9 0 10 0;
+#X connect 10 0 11 0;
+#X connect 10 0 1 0;
+#X connect 11 0 3 0;
+#X connect 12 0 2 0;
+#X connect 13 0 5 0;
+#X coords 0 -1 1 1 200 200 1 100 100;
+#X restore 42 -27 pd ||||||||||||||||||||||||||| dp;
+#X text 147 30 ////////;
+#X text 60 16 ///////;
